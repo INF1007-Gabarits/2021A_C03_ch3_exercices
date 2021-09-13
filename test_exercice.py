@@ -49,7 +49,7 @@ class TestExercice(unittest.TestCase):
             minutes = (degrees % 1) * 60
             seconds = (minutes % 1) * 60
 
-            return degrees - minutes, minutes - seconds, seconds
+            return int(degrees), int(minutes), seconds
             
         values = [2, -4, 5, 4.09]
 
